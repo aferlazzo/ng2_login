@@ -1,0 +1,11 @@
+<h1>Login</h1>
+<p>
+	<input #loginName type="text" value="vetouser" placeholder="Login Name">
+	<input #loginPassword type="password" value="0" placeholder="Password">
+
+	<button (click)="tryToLogin(loginName.value, loginPassword.value);">
+					<!-- loginName.value=''; loginPassword.value=''"> -->
+	Login
+	</button>
+</p>
+<div class="error" *ngIf="errorMessage">{{errorMessage}}</div>
