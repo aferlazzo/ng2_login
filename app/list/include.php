@@ -4,7 +4,7 @@
  * On server, PHP Version 5.5.22
  */
 // hide obnoxious error messages from user
-//error_reporting(0);
+//error_reporting(E_ERROR);
 
 // We can easily unit test this endpoint code with a variable appended to the URI.
 if (isset($_GET['drivername']) == true) {
@@ -31,17 +31,15 @@ if (isset($_GET['drivername']) == true) {
 	if (isset($_POST['drivername']) == true) {
 		$drivername = $_POST['drivername'];
 		$password = $_POST['password'];
-		if (isset($_POST['ability']) == true) {
-			$ability = $_POST['ability'];
-			$firstname = $_POST['firstname'];
-			$lastname = $_POST['lastname'];
-			$email = $_POST['email'];
-			$address = $_POST['address'];
-			$city = $_POST['city'];
-			$state = $_POST['state'];
-			$zip = $_POST['zip'];
-			$phone = $_POST['phone'];
-		}
+		$ability = $_POST['ability'];
+		$firstname = $_POST['firstname'];
+		$lastname = $_POST['lastname'];
+		$email = $_POST['email'];
+		$address = $_POST['address'];
+		$city = $_POST['city'];
+		$state = $_POST['state'];
+		$zip = $_POST['zip'];
+		$phone = $_POST['phone'];
 	}
 }
 

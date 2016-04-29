@@ -1,18 +1,24 @@
 {
-	"name": "angular2-login",
+	"name": "angular2-list",
 	"version": "1.0.0",
 	"scripts": {
-	"start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
-	"tsc": "tsc",
-	"tsc:w": "tsc -w",
-	"lite": "lite-server",
-	"typings": "typings",
-	"postinstall": "typings install"
+		"start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
+		"tsc": "tsc",
+		"tsc:w": "tsc -w",
+		"lite": "lite-server",
+		"typings": "typings",
+		"postinstall": "typings install"
 	},
+	"author": "Tony Ferlazzo",
 	"license": "ISC",
 	"dependencies": {
-	},
-	"devDependencies": {
+		"angular2": "^2.0.0-beta.15",
+		"concurrent": "^0.3.2",
+		"es6-shim": "^0.35.0",
+		"lite": "^3.0.9",
+		"reflect-metadata": "^0.1.2",
+		"rxjs": "^5.0.0-beta.2",
+		"tsc": "^1.20150623.0",
+		"zone.js": "^0.6.11"
 	}
-
 }

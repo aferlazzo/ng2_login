@@ -1,8 +1,8 @@
 import { bootstrap }      from 'angular2/platform/browser';
 import { HTTP_PROVIDERS } from 'angular2/http';
-
+import { ListService }		from './list/list.service';
 // Add all operators to Observable
 import 'rxjs/Rx';
 
-import { LoginComponent } from './login/login.component.ts';
-bootstrap(LoginComponent, [HTTP_PROVIDERS]);
+import { ListComponent } from './list/list.component';
+bootstrap(ListComponent, [HTTP_PROVIDERS, ListService]);

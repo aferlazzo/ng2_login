@@ -1,0 +1,21 @@
+<h1>List</h1>
+<p>
+	<button (click)="tryToList()">
+		List Driver Details
+	</button>
+</p>
+
+<table>
+	<thead>
+	<th>Driver</th><th>Ability</th><th>First Name</th><th>Last Name</th><th>Email</th><th>Address</th>
+	<th>City</th><th>State</th><th>Zip</th><th>Phone</th>
+	</thead>
+
+	<tr *ngFor="#driver of driver_list">
+		<td> {{driver.drivername}} </td><td> {{driver.ability}} </td><td> {{driver.firstname}} </td>
+		<td> {{driver.lastname}} </td><td> {{driver.email}} </td><td> {{driver.address}} </td>
+		<td> {{driver.city}} </td><td> {{driver.state}} </td><td> {{driver.zip}} </td><td> {{driver.phone}} </td>
+	</tr>
+
+
+</table>
